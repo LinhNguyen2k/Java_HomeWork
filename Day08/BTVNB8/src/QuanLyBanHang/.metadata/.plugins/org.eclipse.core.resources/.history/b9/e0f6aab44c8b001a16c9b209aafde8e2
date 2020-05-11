@@ -1,0 +1,9 @@
+package Java_Core;
+
+public class CongNhan {
+private XuongSX xuongSx;
+private String congViec;
+private int soNgayCong;
+private double luong;
+
+}

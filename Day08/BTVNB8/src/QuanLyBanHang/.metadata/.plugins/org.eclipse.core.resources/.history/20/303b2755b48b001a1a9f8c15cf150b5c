@@ -1,0 +1,18 @@
+package Java_Core;
+
+import java.util.Scanner;
+
+public class RunMain {
+ public static Scanner in = new Scanner(System.in);
+	public static void main(String[] args) {
+		int n;
+		System.out.printf("\tNhập số nhân sự:");
+		n = in.nextInt();
+		NhanSu []ns = new NhanSu[n];
+		CanBo cb = new CanBo();
+		CongNhan cn = new CongNhan();
+		System.out.println();
+
+	}
+
+}

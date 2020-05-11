@@ -1,0 +1,37 @@
+package Java_Core;
+
+import java.util.Scanner;
+
+public class RunMain {
+ public static Scanner in = new Scanner(System.in);
+	public static void main(String[] args) {
+		int n,inputNhap;
+		System.out.printf("\tNhập số nhân sự:");
+		n = in.nextInt();
+		NhanSu []ns = new NhanSu[n];
+		CanBo cb = new CanBo();
+		CongNhan cn = new CongNhan();
+		System.out.println();
+		
+		do {
+			System.out.printf("\tNhập 1 để nhập cán bộ, chọn 2 để nhập công nhân:");
+			inputNhap = in.nextInt();
+			switch (inputNhap) {
+			case 1:
+				for(int i=0;i<n;i++)
+				{
+					ns[i] = new NhanSu();
+					ns[i].Nhap();
+					cb.Nhap();
+					}
+				break;
+
+			default:
+				break;
+			}
+		}while(true);
+	
+	}
+	
+
+}
